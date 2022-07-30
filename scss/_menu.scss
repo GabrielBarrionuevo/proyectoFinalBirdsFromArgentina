@@ -1,0 +1,35 @@
+/* ================================= */
+/* PRUEBA MENU BOOTSTRAP */
+/* ================================= */
+.bg-light {
+    --bs-bg-opacity: 0;
+}
+.navbar {
+    padding-top: 0;
+}
+.navbar-light 
+.navbar-brand {
+    color: $cultured;
+    font-size: 3.5rem;
+    font-weight: bold;
+    padding: auto;
+}
+.nav-link {
+    font-size: 1.2em;
+    background-color: $cultured;
+    margin: 2px;
+    border-radius: 5%;
+}
+.container-fluid {
+    display: flex;
+    flex-direction: row;
+    opacity: 1;
+}
+.iconoMenu {
+    width: 40px;
+    //La siguiente linea me arroja error en el css. Investigar porqué.
+    // filter: invert();
+}
+.navbar-nav {
+    margin-left: auto;
+}

@@ -1,0 +1,49 @@
+/* ========================= */
+/* MEDIA QUERIES */
+/* ========================= */
+@media screen and (max-width: 600px){
+    /* MENU */
+    .divAbout {
+        /* No logro encontrar solución al inconveniente de que vuelva a ser row la imagen y el texto de about cuando la resolución es menor a 600px. */
+        display: flex;
+        flex-direction: row;
+    }
+    /* FOOTER */
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        height: fit-content;
+    }
+    .hechoPor {
+        margin: 20px;
+    }
+    .enlacesRedesSociales {
+        display: flex;
+        flex-direction: column;
+    }
+    .enlacesRedesSociales__items--imagen {
+        width: 60px;
+    }
+}
+@media screen and (max-width: 952px){
+    .areaEncabezado {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        height: fit-content;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .grid-contenedor {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .enlacesRedesSociales__items--imagen {
+        width: 70px;
+    }
+}

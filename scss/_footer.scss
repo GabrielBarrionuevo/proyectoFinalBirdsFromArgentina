@@ -1,0 +1,27 @@
+/* ================================ */
+/* ==========BOX MODELIN=========== */
+/* ================================ */
+footer {
+    background-color: $dark-slate-blue;
+    width: 100%;
+}
+.enlacesRedesSociales {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+}
+.enlacesRedesSociales__items {
+    /* margin: 50px 20px; */
+}
+.enlacesRedesSociales__items--imagen {
+    width: 40px;
+    filter: invert(100%);
+    margin: 20px;
+}
+
+.hechoPor {
+    vertical-align: middle;
+    color: $cultured;
+    font-weight: bold;
+    text-align: center;
+}

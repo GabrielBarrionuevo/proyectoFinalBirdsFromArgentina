@@ -1,0 +1,49 @@
+/* ================================ */
+/* ==============RESET============= */
+/* ================================ */
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    background-color: hsla(333, 64%, 66%, 0.1);
+    font-family: 'Lobster', cursive;
+    font-family: 'Roboto Slab', serif;
+    /* Resetear valores antes de empezar */
+}
+#iconoMenu {
+    display: none;
+}
+
+/* ================================ */
+/* ==============GRID============== */
+/* ================================ */
+body {
+    display: grid;
+    grid-template:
+    "encabezado     encabezado"     100px
+    "main           main"           1fr
+    "footer         footer"         250px /
+    1fr             5fr
+    ;
+}
+.header {
+    grid-area: encabezado;
+    /* background-color: red; */
+}
+.main {
+    grid-area: main;
+    /* background-color: green; */
+}
+.footer {
+    grid-area: footer;
+    /* background-color: blue; */
+}
+
+/* ================================ */
+/* ==========BOX MODELIN=========== */
+/* ================================ */
+body, 
+.main {
+    background-color: $cultured;
+}
