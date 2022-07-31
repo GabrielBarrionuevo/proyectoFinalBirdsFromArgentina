@@ -330,7 +330,8 @@ footer {
 
 .enlacesRedesSociales {
   list-style: none;
-  width: 100%;
+  /* Con este le saco el espacio a los enlaces, para centrar mejor el "hecho por Gabo..." */
+  width: 65%;
   text-align: center;
 }
 
@@ -349,6 +350,7 @@ footer {
   color: #f9f9f9;
   font-weight: bold;
   text-align: center;
+  font-size: 1.5rem;
 }
 
 /* ================================= */
@@ -541,6 +543,22 @@ footer {
         filter: brightness(1) blur(0) 
     }
 } */
+/* ********************** */
+/* Offset (fuera de foco) */
+/* Eliminarl d responsive */
+/* ********************** */
+.hechoPor span {
+  cursor: pointer;
+  filter: blur(3px);
+  transition: 0.2s;
+}
+.hechoPor span:hover {
+  filter: blur(0px);
+  transition: 0s;
+  border: 1px solid #f9f9f9;
+  box-shadow: 0 0 55px #b0e298;
+}
+
 /* ========================= */
 /* MEDIA QUERIES */
 /* ========================= */

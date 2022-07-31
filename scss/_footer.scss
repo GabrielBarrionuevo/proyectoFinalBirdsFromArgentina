@@ -7,7 +7,8 @@ footer {
 }
 .enlacesRedesSociales {
     list-style: none;
-    width: 100%;
+    /* Con este le saco el espacio a los enlaces, para centrar mejor el "hecho por Gabo..." */
+    width: 65%;
     text-align: center;
 }
 .enlacesRedesSociales__items {
@@ -24,4 +25,5 @@ footer {
     color: $cultured;
     font-weight: bold;
     text-align: center;
+    font-size: 1.5rem;
 }

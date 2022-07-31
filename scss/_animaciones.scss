@@ -178,3 +178,22 @@
         filter: brightness(1) blur(0) 
     }
 } */
+/* ********************** */
+/* Offset (fuera de foco) */
+/* Eliminarl d responsive */
+/* ********************** */
+.hechoPor span{
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: center;
+    // gap: 1;
+    cursor: pointer;
+    filter: blur(3px);
+    transition: 0.2s;
+        &:hover {
+            filter: blur(0px);
+            transition: 0s;
+            border: 1px solid $cultured;
+            box-shadow: 0 0 55px $granny-smith-apple;
+        }
+}
