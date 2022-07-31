@@ -559,6 +559,10 @@ footer {
   box-shadow: 0 0 55px #b0e298;
 }
 
+/* La siguiente animación la he hecho en otra rama, con nombre ramaTyping. Ha funcionado pero a la hora de realizar el merge desde ramaSegundaEntrega me surge conflicto. He revisado el codigo pero no he visto ningun error. Solo la agrego comentada para revisarla a futuro. */
+/* *********** */
+/* Meny typing */
+/* *********** */
 /* ========================= */
 /* MEDIA QUERIES */
 /* ========================= */

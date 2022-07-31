@@ -197,3 +197,39 @@
             box-shadow: 0 0 55px $granny-smith-apple;
         }
 }
+
+
+
+
+
+
+/* La siguiente animación la he hecho en otra rama, con nombre ramaTyping. Ha funcionado pero a la hora de realizar el merge desde ramaSegundaEntrega me surge conflicto. He revisado el codigo pero no he visto ningun error. Solo la agrego comentada para revisarla a futuro. */
+/* *********** */
+/* Meny typing */
+/* *********** */
+// .navbar-brand {
+//     white-space: nowrap;
+//     border-right: 4px solid white;
+//     width: 20ch;
+//     height: 80%;
+//     animation: 
+//         typing 2s steps(20),
+//         blink .5s infinite step-end alternate,
+//         desaparecer 2s ;
+//     overflow: hidden;
+// }
+// @keyframes typing {
+//     from {
+//         width: 0;
+//     }
+// }
+// @keyframes blink {
+//     50% {
+//         border-color: transparent;
+//     }
+// }
+// @keyframes desaparecer {
+//     100% {
+//         border-color: transparent;
+//     }
+// }
