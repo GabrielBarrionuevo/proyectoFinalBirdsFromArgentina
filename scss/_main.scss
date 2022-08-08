@@ -54,10 +54,8 @@
     justify-content: center;
 }
 .areaEncabezado {
-    display: flex;
+    @extend .enlacesRedesSociales;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
     gap: 30px;
 }
 .grid-item {

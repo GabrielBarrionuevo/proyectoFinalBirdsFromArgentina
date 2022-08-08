@@ -42,6 +42,15 @@
     position: relative;
     overflow: hidden;
 }
+
+@mixin burbujas($width, $height, $left, $duration, $delay) {
+    width: $width;
+    height: $height;
+    left: $left;
+    animation-duration: $duration;
+    animation-delay: $delay;
+}
+
 .burbuja {
     border-radius: 50%;
     box-shadow: 0 0 15px $cultured;
@@ -54,74 +63,34 @@
     animation: burbujas 3s linear infinite;
 }
 .burbuja:nth-child(1){
-    width: 80px;
-    height: 80px;
-    left: 5%;
-    animation-duration: 3s;
-    animation-delay: 3s;
+    @include burbujas(80px, 80px, 5%, 3s, 3s);
 }
 .burbuja:nth-child(2){
-    width: 100px;
-    height: 100px;
-    left: 35%;
-    animation-duration: 3s;
-    animation-delay: 5s;
+    @include burbujas(100px, 100px, 35%, 3s, 5s)
 }
 .burbuja:nth-child(3){
-    width: 20px;
-    height: 20px;
-    left: 15%;
-    animation-duration: 1.5s;
-    animation-delay: 7s;
+    @include burbujas(20px, 20px, 15%, 1.5s, 7s)
 }
 .burbuja:nth-child(4){
-    width: 50px;
-    height: 50px;
-    left: 90%;
-    animation-duration: 6s;
-    animation-delay: 3s;
+    @include burbujas(50px, 50px, 90%, 6s, 3s)
 }
 .burbuja:nth-child(5){
-    width: 70px;
-    height: 70px;
-    left: 65%;
-    animation-duration: 3s;
-    animation-delay: 1s;
+    @include burbujas(70px, 70px, 65%, 3s, 1s)
 }
 .burbuja:nth-child(6){
-    width: 20px;
-    height: 20px;
-    left: 50%;
-    animation-duration: 4s;
-    animation-delay: 5s;
+    @include burbujas(20px, 20px, 50%, 4s, 5s)
 }
 .burbuja:nth-child(7){
-    width: 20px;
-    height: 20px;
-    left: 65%;
-    animation-duration: 1.5s;
-    animation-delay: 7s;
+    @include burbujas(20px, 20px, 65%, 1.5s, 7s)
 }
 .burbuja:nth-child(8){
-    width: 100px;
-    height: 100px;
-    left: 52%;
-    animation-duration: 5s;
-    animation-delay: 5s;
+    @include burbujas(100px, 100px, 52%, 5s, 5s)
 }
 .burbuja:nth-child(9){
-    width: 65px;
-    height: 65px;
-    left: 51%;
-    animation-duration: 3s;
-    animation-delay: 2s;
+    @include burbujas(65px, 65px, 51%, 3s, 2s)
 }
 .burbuja:nth-child(10){
-    width: 40px;
-    height: 40px;
-    left: 35%;
-    animation-duration: 3s;
-    animation-delay: 4s;
+    @include burbujas(40px, 40px, 35%, 3s, 4s)
 }
 
 @keyframes burbujas {

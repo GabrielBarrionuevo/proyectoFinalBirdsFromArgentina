@@ -206,17 +206,14 @@ header {
   margin: 20px;
 }
 
-.enlacesRedesSociales {
+.enlacesRedesSociales, .areaEncabezado {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .areaEncabezado {
-  display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
   gap: 30px;
 }
 
@@ -328,7 +325,7 @@ footer {
   width: 100%;
 }
 
-.enlacesRedesSociales {
+.enlacesRedesSociales, .areaEncabezado {
   list-style: none;
   /* Con este le saco el espacio a los enlaces, para centrar mejor el "hecho por Gabo..." */
   width: 65%;
@@ -584,7 +581,7 @@ footer {
   .hechoPor {
     margin: 20px;
   }
-  .enlacesRedesSociales {
+  .enlacesRedesSociales, .areaEncabezado {
     display: flex;
     flex-direction: column;
   }
