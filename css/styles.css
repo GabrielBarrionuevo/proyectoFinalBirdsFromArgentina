@@ -67,8 +67,6 @@ h2 {
 /* ==============FLEX============== */
 /* ================================ */
 .header {
-  /* display: flex;
-  flex-direction: row; */
   align-items: center;
   justify-content: space-around;
 }
@@ -85,41 +83,12 @@ header {
   z-index: 1000;
 }
 
-/* Menú fijo en top.Intentaré dejar fijo solamente los botones. */
-/* .navbar-nav {
-    background-color: red;
-    position: sticky;
-    top: 10px;
-} */
 .container-fluid {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-/* .tituloPrincipal {
-    font-size: 50px;
-    text-align: left;
-} */
-/* .lista-navegacion {
-    text-align: center;
-    margin: 0 auto;
-    padding: 0;
-} */
-/* .lista-navegacion li {
-    list-style: none;
-    display: inline-block;
-    font-size: 20px;
-    margin: 0 auto;
-    padding: 5px;
-    border-radius: 3px;
-    background-color: $cultured;
-} */
-/* 
-.lista-navegacion li a {
-    color: #6883baff;
-    text-decoration: none;
-} */
 /* ================================= */
 /* PRUEBA MENU BOOTSTRAP */
 /* ================================= */
@@ -248,9 +217,7 @@ main {
 .areaEncabezado {
   background-image: url("../img/Index-encabezado.jpg");
   background-position: 60% 35%;
-  /* El background Attachment no está en la entrega. */
   background-attachment: fixed;
-  /* padding: 30px; */
   width: 100%;
   height: 500px;
   margin-bottom: 20px;
@@ -322,9 +289,6 @@ main {
   padding: auto;
 }
 
-/* ******************** */
-/* Formulario */
-/* ******************** */
 /* ================================ */
 /* ==========BOX MODELIN=========== */
 /* ================================ */
@@ -393,11 +357,6 @@ footer {
 .bg_animate {
   width: 100%;
   height: 60vh;
-  /* background: linear-gradient(
-      to right, 
-      $dark-slate-blue, 
-      $china-pink
-      ); */
   position: relative;
   overflow: hidden;
 }
@@ -528,30 +487,6 @@ footer {
   color: #6883ba;
 }
 
-/* ************* */
-/* Fadein header */
-/* ************* */
-/* .areaEncabezado {
-    animation: fadeIn 3s:
-}
-@keyframes fadeIn {
-    0% { 
-        opacity: 0; 
-        filter: brightness(1) blur(20px) 
-    }
-    10% { 
-        opacity: 1; 
-        filter: brightness(2) blur(10px) 
-    }
-    100% { 
-        opacity: 1; 
-        filter: brightness(1) blur(0) 
-    }
-} */
-/* ********************** */
-/* Offset (fuera de foco) */
-/* Eliminarlo del responsive */
-/* ********************** */
 .hechoPor span {
   cursor: pointer;
   filter: blur(3px);
@@ -564,10 +499,6 @@ footer {
   box-shadow: 0 0 55px #b0e298;
 }
 
-/* La siguiente animación la he hecho en otra rama, con nombre ramaTyping. Ha funcionado pero a la hora de realizar el merge desde ramaSegundaEntrega me surge conflicto. He revisado el codigo pero no he visto ningun error. Solo la agrego comentada para revisarla a futuro. */
-/* *********** */
-/* Meny typing */
-/* *********** */
 /* ========================= */
 /* MEDIA QUERIES */
 /* ========================= */

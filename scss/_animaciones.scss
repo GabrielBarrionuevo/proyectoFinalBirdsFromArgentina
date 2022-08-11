@@ -34,11 +34,6 @@
 .bg_animate {
     width: 100%;
     height: 60vh;
-    /* background: linear-gradient(
-        to right, 
-        $dark-slate-blue, 
-        $china-pink
-        ); */
     position: relative;
     overflow: hidden;
 }
@@ -127,35 +122,7 @@
 .navbar-light .navbar-brand:hover {
     color: $glaucous;
 }
-/* ************* */
-/* Fadein header */
-/* ************* */
-/* .areaEncabezado {
-    animation: fadeIn 3s:
-}
-@keyframes fadeIn {
-    0% { 
-        opacity: 0; 
-        filter: brightness(1) blur(20px) 
-    }
-    10% { 
-        opacity: 1; 
-        filter: brightness(2) blur(10px) 
-    }
-    100% { 
-        opacity: 1; 
-        filter: brightness(1) blur(0) 
-    }
-} */
-/* ********************** */
-/* Offset (fuera de foco) */
-/* Eliminarlo del responsive */
-/* ********************** */
 .hechoPor span{
-    // display: flex;
-    // flex-direction: row;
-    // justify-content: center;
-    // gap: 1;
     cursor: pointer;
     filter: blur(3px);
     transition: 0.2s;
@@ -167,38 +134,3 @@
         }
 }
 
-
-
-
-
-
-/* La siguiente animación la he hecho en otra rama, con nombre ramaTyping. Ha funcionado pero a la hora de realizar el merge desde ramaSegundaEntrega me surge conflicto. He revisado el codigo pero no he visto ningun error. Solo la agrego comentada para revisarla a futuro. */
-/* *********** */
-/* Meny typing */
-/* *********** */
-// .navbar-brand {
-//     white-space: nowrap;
-//     border-right: 4px solid white;
-//     width: 20ch;
-//     height: 80%;
-//     animation: 
-//         typing 2s steps(20),
-//         blink .5s infinite step-end alternate,
-//         desaparecer 2s ;
-//     overflow: hidden;
-// }
-// @keyframes typing {
-//     from {
-//         width: 0;
-//     }
-// }
-// @keyframes blink {
-//     50% {
-//         border-color: transparent;
-//     }
-// }
-// @keyframes desaparecer {
-//     100% {
-//         border-color: transparent;
-//     }
-// }
