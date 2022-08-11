@@ -2,8 +2,6 @@
 /* ==============FLEX============== */
 /* ================================ */
 .header {
-    /* display: flex;
-    flex-direction: row; */
     align-items: center;
     justify-content: space-around;
 }
@@ -18,12 +16,6 @@ header {
     height: 100px;
     z-index: 1000;
 }
-/* Menú fijo en top.Intentaré dejar fijo solamente los botones. */
-/* .navbar-nav {
-    background-color: red;
-    position: sticky;
-    top: 10px;
-} */
 
 .container-fluid {
     display: flex;
@@ -31,26 +23,3 @@ header {
     justify-content: space-between;
 }
 
-/* .tituloPrincipal {
-    font-size: 50px;
-    text-align: left;
-} */
-/* .lista-navegacion {
-    text-align: center;
-    margin: 0 auto;
-    padding: 0;
-} */
-/* .lista-navegacion li {
-    list-style: none;
-    display: inline-block;
-    font-size: 20px;
-    margin: 0 auto;
-    padding: 5px;
-    border-radius: 3px;
-    background-color: $cultured;
-} */
-/* 
-.lista-navegacion li a {
-    color: #6883baff;
-    text-decoration: none;
-} */
