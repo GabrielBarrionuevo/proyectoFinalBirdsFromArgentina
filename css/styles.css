@@ -513,6 +513,19 @@ footer {
     display: flex;
     flex-direction: row;
   }
+  .navbar-light .navbar-brand {
+    color: #f9f9f9;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+  }
+  .navbar-toggler {
+    margin: auto;
+  }
+  .container-fluid {
+    margin-top: 4%;
+  }
   /* FOOTER */
   .footer {
     display: flex;
