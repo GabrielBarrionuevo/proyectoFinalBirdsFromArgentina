@@ -555,5 +555,8 @@ footer {
 /* ***************** */
 /* Paleta de colores */
 /* ***************** */
+body {
+  overflow-x: hidden;
+}
 
 /*# sourceMappingURL=styles.css.map */
