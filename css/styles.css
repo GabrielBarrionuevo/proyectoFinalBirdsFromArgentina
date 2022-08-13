@@ -133,6 +133,11 @@ header {
   text-align: center;
 }
 
+.navbar-toggler-icon {
+  filter: invert(100%);
+  border: 4px solid #3d3b8e;
+}
+
 /* ================================ */
 /* ==============GRID============== */
 /* ================================ */
@@ -565,8 +570,5 @@ footer {
     width: 70px;
   }
 }
-/* ***************** */
-/* Paleta de colores */
-/* ***************** */
 
 /*# sourceMappingURL=styles.css.map */
