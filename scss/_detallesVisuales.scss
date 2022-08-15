@@ -1,0 +1,14 @@
+//Sombra a las imagenes
+.areaPrincial__imagenChica,
+.areaPrincipal__imagenGrande,
+.imagenEstatica {
+    box-shadow: 0 0 45px $dark-slate-blue;
+}
+//Ajustar bien el objet-fit.
+.imagenEstatica {
+    object-fit: unset;
+}
+
+//Centrar correctamente las imagenes de las aves usando id´s.
+
+//Agregar texto y animación con hover a las imágenes.

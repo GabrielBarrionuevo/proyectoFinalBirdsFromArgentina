@@ -579,4 +579,14 @@ form {
   padding: 40px;
 }
 
+.areaPrincial__imagenChica,
+.areaPrincipal__imagenGrande,
+.imagenEstatica {
+  box-shadow: 0 0 45px #3d3b8e;
+}
+
+.imagenEstatica {
+  object-fit: unset;
+}
+
 /*# sourceMappingURL=styles.css.map */
