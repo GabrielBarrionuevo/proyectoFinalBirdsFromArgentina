@@ -29,12 +29,11 @@ html {
 /* ================================ */
 body {
   display: grid;
-  grid-template: "encabezado     encabezado" 100px "main           main" 1fr "footer         footer" 250px/1fr 5fr;
+  grid-template: "encabezado     encabezado" 120px "main           main" 1fr "footer         footer" 250px/1fr 5fr;
 }
 
 .header {
   grid-area: encabezado;
-  /* background-color: red; */
 }
 
 .main {
@@ -79,7 +78,7 @@ header {
   opacity: 0.9;
   position: fixed;
   width: 100%;
-  height: 100px;
+  height: 120px;
   z-index: 1000;
 }
 
@@ -90,7 +89,7 @@ header {
 }
 
 /* ================================= */
-/* PRUEBA MENU BOOTSTRAP */
+/*  MENU BOOTSTRAP */
 /* ================================= */
 .bg-light {
   --bs-bg-opacity: 0;
@@ -569,6 +568,37 @@ footer {
   .enlacesRedesSociales__items--imagen {
     width: 70px;
   }
+}
+body {
+  overflow-x: hidden;
+}
+
+.textAbout {
+  padding: 40px;
+}
+
+.imagenAbout {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.imagenContact {
+  width: 100%;
+  object-fit: cover;
+}
+
+.divAbout,
+.divContact {
+  margin: 20px;
+}
+
+.areaPrincipal__videos {
+  padding: auto;
+}
+
+form {
+  padding: 40px;
 }
 
 /*# sourceMappingURL=styles.css.map */
