@@ -1,5 +1,5 @@
 /* ================================= */
-/* PRUEBA MENU BOOTSTRAP */
+/*  MENU BOOTSTRAP */
 /* ================================= */
 .bg-light {
     --bs-bg-opacity: 0;
@@ -34,4 +34,8 @@
 .nav-item, 
 .dropdown-item {
     text-align: center;
+}
+.navbar-toggler-icon {
+    filter: invert(100%);
+    border: 4px solid $dark-slate-blue;
 }

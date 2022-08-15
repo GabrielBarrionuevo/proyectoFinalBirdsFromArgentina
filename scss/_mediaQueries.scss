@@ -8,6 +8,23 @@
         display: flex;
         flex-direction: row;
     }
+
+//Terminar de liquidar bien detalles del menu responsive.
+    .navbar-light 
+    .navbar-brand {
+        color: $cultured;
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        margin: auto;
+    }
+    .navbar-toggler {
+        margin: auto;
+    } 
+    .container-fluid {
+        // background-color: red;
+        margin-top: 4%;
+    }
     /* FOOTER */
     .footer {
         display: flex;

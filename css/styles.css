@@ -29,12 +29,11 @@ html {
 /* ================================ */
 body {
   display: grid;
-  grid-template: "encabezado     encabezado" 100px "main           main" 1fr "footer         footer" 250px/1fr 5fr;
+  grid-template: "encabezado     encabezado" 120px "main           main" 1fr "footer         footer" 250px/1fr 5fr;
 }
 
 .header {
   grid-area: encabezado;
-  /* background-color: red; */
 }
 
 .main {
@@ -79,7 +78,7 @@ header {
   opacity: 0.9;
   position: fixed;
   width: 100%;
-  height: 100px;
+  height: 120px;
   z-index: 1000;
 }
 
@@ -90,7 +89,7 @@ header {
 }
 
 /* ================================= */
-/* PRUEBA MENU BOOTSTRAP */
+/*  MENU BOOTSTRAP */
 /* ================================= */
 .bg-light {
   --bs-bg-opacity: 0;
@@ -131,6 +130,11 @@ header {
 .nav-item,
 .dropdown-item {
   text-align: center;
+}
+
+.navbar-toggler-icon {
+  filter: invert(100%);
+  border: 4px solid #3d3b8e;
 }
 
 /* ================================ */
@@ -504,6 +508,19 @@ footer {
     /* No logro encontrar solución al inconveniente de que vuelva a ser row la imagen y el texto de about cuando la resolución es menor a 600px. */
     display: flex;
     flex-direction: row;
+  }
+  .navbar-light .navbar-brand {
+    color: #f9f9f9;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+  }
+  .navbar-toggler {
+    margin: auto;
+  }
+  .container-fluid {
+    margin-top: 4%;
   }
   /* FOOTER */
   .footer {
