@@ -1,7 +1,9 @@
 //Sombra a las imagenes
 .areaPrincial__imagenChica,
 .areaPrincipal__imagenGrande,
-.imagenEstatica {
+.imagenEstatica,
+.imagenAbout,
+.imagenContact {
     box-shadow: 0 0 45px $dark-slate-blue;
 }
 //Ajustar bien el objet-fit.

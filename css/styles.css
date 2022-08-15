@@ -581,7 +581,9 @@ form {
 
 .areaPrincial__imagenChica,
 .areaPrincipal__imagenGrande,
-.imagenEstatica {
+.imagenEstatica,
+.imagenAbout,
+.imagenContact {
   box-shadow: 0 0 45px #3d3b8e;
 }
 
