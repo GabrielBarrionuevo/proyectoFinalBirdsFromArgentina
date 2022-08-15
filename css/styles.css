@@ -502,7 +502,7 @@ footer {
 /* ========================= */
 /* MEDIA QUERIES */
 /* ========================= */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   /* MENU */
   .divAbout {
     /* No logro encontrar solución al inconveniente de que vuelva a ser row la imagen y el texto de about cuando la resolución es menor a 600px. */
