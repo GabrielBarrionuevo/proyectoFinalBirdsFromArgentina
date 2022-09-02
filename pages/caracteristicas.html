@@ -27,19 +27,17 @@
         <!-- Menu de navegación -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">Birds from Argentina</a>
+                <a class="navbar-brand tituloPrincipal" href="../index.html"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-2 mb-lg-0 mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            <a class="nav-link active tituloInicio" aria-current="page" href="../index.html"></a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Características
-                            </a>
+                        <li class="nav-item dropdown activo">
+                            <a class="nav-link dropdown-toggle tituloCaracteristicas" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="caracteristicas.html#miradas">Miradas</a></li>
                                 <li><a class="dropdown-item" href="caracteristicas.html#plumas">Plumas</a></li>
@@ -49,9 +47,7 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Categorias
-                            </a>
+                            <a class="nav-link dropdown-toggle tituloCategorias" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="categorias.html#NorteArgentino">Norte Argentino</a></li>
                                 <li><a class="dropdown-item" href="categorias.html#CentroArgentino">Centro Argentino</a></li>
@@ -59,10 +55,10 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">About us</a>
+                            <a class="nav-link tituloAbout" href="about.html"></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contactMe.html">Contact us</a>
+                            <a class="nav-link tituloContact" href="contactMe.html"></a>
                         </li>
                     </ul>
                 </div>
@@ -75,7 +71,7 @@
         <!-- Area de bienvenida -->
         <section class="areaEncabezado bg_animate">
             <h1 class="areaEncabezado__titulo encabezadoAparecer">Características!</h1>
-            <p class="areaEncabezado__texto encabezadoAparecer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, totam. Maxime alias possimus delectus, fuga nobis libero harum doloribus recusandae atque at veritatis eaque quibusdam repudiandae, tenetur velit obcaecati? Odit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quod error magnam rerum amet harum culpa! Dolore similique nisi dolores ipsum? Laboriosam praesentium soluta nemo. Culpa tempore quidem molestiae quam?</p>
+            <p class="areaEncabezado__texto encabezadoAparecer">La anatomía interna de las aves explica muchas de las observaciones de campo. Las aves son vertebrados de sangre caliente, con el cuerpo recubierto de plumas, miembros anteriores transformados en alas y que ponen huevos. Su esqueleto constituye una irremplazable armazón, caracterizada por la fusión de huesos próximos y su estructura hueca (sin médula) de los huesos de la mayoría de las aves, es lo que les brindan resistencia y ligereza. Se complementan con ramificaciones complejas de los sacos aéreos, órganos respiratorios que irrigan aire hasta las cavidades de los huesos, lo que se denomina aireación o neumaticidad.</p>
 
             <!-- Animacion burbujas -->
             <div class="burbujas">
@@ -95,11 +91,13 @@
         <section class="areaPrincipal" id="miradas">
             <h2 class="areaPrincipal__titulo">Miradas</h2>
             <div class="grid-contenedor">
-                <div class="grid-item elementoGrande1">
-                    <img src="../img/Caracteristicas - Miradas - Lechuzon orejudo.jpg" alt="Tacuarita Lorem" title="Tacuarita Lorem " class="areaPrincial__imagenChica imagenAreaPrincipal wow animate__animated animate__backInLeft" id="imagenCentradaManualmente">
+                <div class="grid-item elementoGrande1 imagenContenedor">
+                    <img src="../img/Caracteristicas - Miradas - Lechuzon orejudo.jpg" alt="Lechuzon orejudo" title="Lechuzon orejudo" class="areaPrincipal__imagen wow animate__animated animate__backInLeft" id="imagenCentradaManualmente03">
+                    <div class="textoCentrado wow animate__animated animate__fadeIn">Lechuzón orejudo</div>
                 </div>
-                <div class="grid-item elementoChico1">
-                    <img src="../img/Caracteristicas - Miradas - Lechuza Bizcachera.jpg" alt="Picaflor Esmeralda" title="Picaflor Esmeralda" class="areaPrincipal__imagenGrande imagenAreaPrincipal wow animate__animated animate__backInRight">
+                <div class="grid-item elementoChico1 imagenContenedor">
+                    <img src="../img/Caracteristicas - Miradas - Lechuza Bizcachera.jpg" alt="Lechuza Bizcachera" title="Lechuza Bizcachera" class="areaPrincipal__imagen wow animate__animated animate__backInRight">
+                    <div class="textoCentrado wow animate__animated animate__fadeIn">Lechuza Bizcachera</div>
                 </div>
             </div>
         </section>
@@ -108,11 +106,13 @@
         <section class="areaPrincipal" id="plumas">
             <h2 class="areaPrincipal__titulo">Plumas</h2>
             <div class="grid-contenedor">
-                <div class="grid-item elementoChico2">
-                    <img src="../img/Caracteristicas - Plumas - 01.jpg" alt="Martin Pescador" title="Martin Pescador" class="areaPrincipal__imagenGrande imagenAreaPrincipal wow animate__animated animate__backInLeft" id="imagenCentradaManualmente">
+                <div class="grid-item elementoChico2 imagenContenedor">
+                    <img src="../img/Caracteristicas - Plumas - 01.jpg" alt="Plumas rojizas" title="Plumas rojizas" class="areaPrincipal__imagen wow animate__animated animate__backInLeft">
+                    <div class="textoCentrado wow animate__animated animate__fadeIn">Piquituerto común</div>
                 </div>
-                <div class="grid-item elementoGrande2">
-                    <img src="../img/Caracteristicas - Plumas - 02.jpg" alt="Cabures" title="Cabures" class="areaPrincial__imagenChica imagenAreaPrincipal wow animate__animated animate__backInRight">
+                <div class="grid-item elementoGrande2 imagenContenedor">
+                    <img src="../img/Caracteristicas - Plumas - 02.jpg" alt="Pavo real" title="Pavo real" class="areaPrincipal__imagen wow animate__animated animate__backInRight">
+                    <div class="textoCentrado wow animate__animated animate__fadeIn">Pavo Real</div>
                 </div>    
             </div>
         </section>
@@ -121,11 +121,13 @@
         <section class="areaPrincipal" id="picos">
             <h2 class="areaPrincipal__titulo">Picos</h2>
             <div class="grid-contenedor">
-                <div class="grid-item elementoGrande1">
-                    <img src="../img/Caracteristicas - Picos - 01.jpg" alt="Tacuarita Lorem" title="Tacuarita Lorem " class="areaPrincial__imagenChica imagenAreaPrincipal wow animate__animated animate__backInLeft" id="imagenCentradaManualmente">
+                <div class="grid-item elementoGrande1 imagenContenedor">
+                    <img src="../img/Caracteristicas - Picos - 01.jpg" alt="Pico ancho" title="Pico ancho" class="areaPrincipal__imagen wow animate__animated animate__backInLeft">
+                    <div class="textoCentrado wow animate__animated animate__fadeIn">Fratercula ártica</div>
                 </div>
-                <div class="grid-item elementoChico1">
-                    <img src="../img/Caracteristicas - Picos - 02.jpg" alt="Picaflor Esmeralda" title="Picaflor Esmeralda" class="areaPrincipal__imagenGrande imagenAreaPrincipal wow animate__animated animate__backInRight">
+                <div class="grid-item elementoChico1 imagenContenedor">
+                    <img src="../img/Caracteristicas - Picos - 02.jpg" alt="Pico picaflor" title="Pico picaflor" class="areaPrincipal__imagen wow animate__animated animate__backInRight" id="imagenCentradaManualmente04">
+                    <div class="textoCentrado wow animate__animated animate__fadeIn">Martín pescador</div>
                 </div>
             </div>
         </section>
@@ -134,11 +136,13 @@
         <section class="areaPrincipal" id="nidos">
             <h2 class="areaPrincipal__titulo">Nidos</h2>
             <div class="grid-contenedor">
-                <div class="grid-item elementoChico2">
-                    <img src="../img/Caracteristicas - Nidos - 01.jpg" alt="Martin Pescador" title="Martin Pescador" class="areaPrincipal__imagenGrande imagenAreaPrincipal wow animate__animated animate__backInLeft" id="imagenCentradaManualmente">
+                <div class="grid-item elementoChico2 imagenContenedor">
+                    <img src="../img/Caracteristicas - Nidos - 01.jpg" alt="Nido en tronco" title="Nido en tronco" class="areaPrincipal__imagen wow animate__animated animate__backInLeft">
+                    <div class="textoCentrado wow animate__animated animate__fadeIn">Carpintero pico plateado</div>
                 </div>
-                <div class="grid-item elementoGrande2">
-                    <img src="../img/Caracteristicas - Nidos - 02.jpg" alt="Cabures" title="Cabures" class="areaPrincial__imagenChica imagenAreaPrincipal wow animate__animated animate__backInRight">
+                <div class="grid-item elementoGrande2 imagenContenedor">
+                    <img src="../img/Caracteristicas - Nidos - 02.jpg" alt="Nido colgante" title="Nido colgante" class="areaPrincipal__imagen wow animate__animated animate__backInRight">
+                    <div class="textoCentrado wow animate__animated animate__fadeIn">Tejedor</div>
                 </div>    
             </div>
         </section>
@@ -147,11 +151,13 @@
         <section class="areaPrincipal" id="patas">
             <h2 class="areaPrincipal__titulo">Patas</h2>
             <div class="grid-contenedor">
-                <div class="grid-item elementoGrande1">
-                    <img src="../img/Caracteristicas - Patas - 03.jpg" alt="Tacuarita Lorem" title="Tacuarita Lorem " class="areaPrincial__imagenChica imagenAreaPrincipal wow animate__animated animate__backInLeft" id="imagenCentradaManualmente">
+                <div class="grid-item elementoGrande1 imagenContenedor">
+                    <img src="../img/Caracteristicas - Patas - 03.jpg" alt="Patas azules" title="Patas azules" class="areaPrincipal__imagen wow animate__animated animate__backInLeft">
+                    <div class="textoCentrado wow animate__animated animate__fadeIn">Piquero patiazul</div>
                 </div>
-                <div class="grid-item elementoChico1">
-                    <img src="../img/Caracteristicas - Patas - 01.jpg" alt="Picaflor Esmeralda" title="Picaflor Esmeralda" class="areaPrincipal__imagenGrande imagenAreaPrincipal wow animate__animated animate__backInRight">
+                <div class="grid-item elementoChico1 imagenContenedor">
+                    <img src="../img/Caracteristicas - Patas - 01.jpg" alt="Patas con falanges" title="Patas con falanges" class="areaPrincipal__imagen wow animate__animated animate__backInRight">
+                    <div class="textoCentrado wow animate__animated animate__fadeIn">Fulica americana</div>
                 </div>
             </div>
         </section>
@@ -160,40 +166,24 @@
     <!-- Footer -->
     <footer class="footer">
         <ul class="enlacesRedesSociales">
-            <li class="enlacesRedesSociales__items wow animate__animated animate__backInUp">
-                <a href="https://www.facebook.com.ar" target="_blank"><img src="../ico/facebook.png" alt="" class="enlacesRedesSociales__items--imagen"></a>
+            <li class="enlacesRedesSociales__items">
+                <a href="https://www.facebook.com.ar" target="_blank">
+                    <img src="../ico/facebook.png" alt="" class="enlacesRedesSociales__items--imagen"></a>
             </li>
-            <li class="enlacesRedesSociales__items wow animate__animated animate__backInUp">
-                <a href="https://www.instagram.com" target="_blank"><img src="../ico/instagram.png" alt="" class="enlacesRedesSociales__items--imagen"></a>
-            </li>
-            <li class="enlacesRedesSociales__items wow animate__animated animate__backInUp">
+            <li class="enlacesRedesSociales__items">
                 <a href="https://www.twitter.com" target="_blank">
                     <img src="../ico/twitter.png" alt="" class="enlacesRedesSociales__items--imagen" id="twitter">
                 </a>
             </li>
+            <li class="enlacesRedesSociales__items">
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="../ico/instagram.png" alt="" class="enlacesRedesSociales__items--imagen"></a>
+            </li>
         </ul>
-        <p class="hechoPor">
-            <span><i></i>H</span>
-            <span><i></i>e</span>
-            <span><i></i>c</span>
-            <span><i></i>h</span>
-            <span><i></i>o</span>
-            <span><i></i>&nbsp</span>
-            <span><i></i>p</span>
-            <span><i></i>o</span>
-            <span><i></i>r</span>
-            <span><i></i>&nbsp</span>
-            <span><i></i>G</span>
-            <span><i></i>a</span>
-            <span><i></i>b</span>
-            <span><i></i>r</span>
-            <span><i></i>i</span>
-            <span><i></i>e</span>
-            <span><i></i>l</span>
-            <span><i></i>.</span>
-            <span><i></i>.</span>
-            <span><i></i>.</span>
-        </p>
+        <!-- wow animate__animated animate__slideInUp -->
+        <div class="hechoPor">
+            <p class="stroke halftone halftone-color">Gabo...</p>
+        </div>
     </footer>
 
     <!-- Agregamos JS para utilizar Wow -->

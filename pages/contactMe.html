@@ -26,19 +26,17 @@
         <!-- Menu de navegación -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">Birds from Argentina</a>
+                <a class="navbar-brand tituloPrincipal" href="../index.html"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-2 mb-lg-0 mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            <a class="nav-link active tituloInicio" aria-current="page" href="../index.html"></a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="caracteristicas.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Características
-                            </a>
+                            <a class="nav-link dropdown-toggle tituloCaracteristicas" href="caracteristicas.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="caracteristicas.html#miradas">Miradas</a></li>
                                 <li><a class="dropdown-item" href="caracteristicas.html#plumas">Plumas</a></li>
@@ -48,9 +46,7 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="categorias.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Categorias
-                            </a>
+                            <a class="nav-link dropdown-toggle tituloCategorias" href="categorias.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="categorias.html#NorteArgentino">Norte Argentino</a></li>
                                 <li><a class="dropdown-item" href="categorias.html#CentroArgentino">Centro Argentino</a></li>
@@ -58,10 +54,10 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">About us</a>
+                            <a class="nav-link tituloAbout" href="about.html"></a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contactMe.html">Contact us</a>
+                        <li class="nav-item activo">
+                            <a class="nav-link tituloContact" href="contactMe.html"></a>
                         </li>
                     </ul>
                 </div>
@@ -74,7 +70,7 @@
         <!-- Area de bienvenida -->
         <section class="areaEncabezado bg_animate">
             <h1 class="areaEncabezado__titulo encabezadoAparecer">Contact us!</h1>
-            <p class="areaEncabezado__texto encabezadoAparecer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, totam. Maxime alias possimus delectus, fuga nobis libero harum doloribus recusandae atque at veritatis eaque quibusdam repudiandae, tenetur velit obcaecati? Odit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quod error magnam rerum amet harum culpa! Dolore similique nisi dolores ipsum? Laboriosam praesentium soluta nemo. Culpa tempore quidem molestiae quam?</p>
+            <p class="areaEncabezado__texto encabezadoAparecer">Estamos dispuestos a transmitirte lo que sabemos. Ese conocimiento encierra una de las claves del misterio. Eso sí, para introducirse en el santuario de la naturaleza deberemos guardar ciertas reglas. La del silencio es una. Comportarnos como en cualquier templo, aunque tus preguntas, y sus respuestas, serán las únicas voces que las aves aceptarán de buen grado; con un guiño en sus ojillos pícaros. Porque se divierten con el intento humano de conocerlas.</p>
 
             <!-- Animacion burbujas -->
             <div class="burbujas">
@@ -95,12 +91,13 @@
         <div class="divContact 
         px-1 overflow-hidde
         mt-3">
-            <div class="row">
+            <div class="row
+                justify-content-center">
                 <div class=" 
-                    col-lg-8 
+                    col-lg-7 
                     col-md-11 
-                    col-sm-12 
-                    col-xs-12">
+                    col-sm-11
+                    col-11">
                     <form>
                         <!-- Titulo principal del formulario -->
                         <legend>Ingresa tus datos</legend>
@@ -108,43 +105,45 @@
                         <!-- Datos personales  -->
                         <div>
                             <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Nombre y Apellido</label>
+                                <label for="exampleInputNombre" class="form-label">Nombre y Apellido</label>
                                 <input type="text" class="form-control" id="exampleInputNombre" aria-describedby="nombreHelp">
-                                <div id="emailHelp" class="form-text">We'll never share your name with anyone else.</div>
+                                <div id="nombreHelp" class="form-text">We'll never share your name with anyone else.</div>
                             </div>
                             <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <label for="exampleInputEmail1" class="form-label">Dirección de email</label>
                                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                                 <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                             </div>
                             <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Celular</label>
+                                <label for="exampleInputTel" class="form-label">Celular</label>
                                 <input type="tel" class="form-control" id="exampleInputTel" aria-describedby="telHelp">
                                 <div id="telHelp" class="form-text">We'll never share your tel with anyone else.</div>
                             </div>
                         </div>
 
                         <!-- Opciones de aves -->
-                        <label for="exampleInputEmail1" class="form-label">Ave preferida</label>
+                        <label for="exampleInputAves" class="form-label">Ave preferida</label>
                         <select class="form-select" aria-label="Default select example">
                             <option selected>Seleccionar</option>
-                            <option value="1">Ave 1</option>
-                            <option value="2">Ave 2</option>
-                            <option value="3">Ave 3</option>
-                            <option value="4">Ave 4</option>
-                            <option value="5">Ave 5</option>
-                            <option value="6">Ave 6</option>
+                            <option value="Garza Bruja">Garza Bruja</option>
+                            <option value="Albatros Cabeza Gris">Albatros Cabeza Gris</option>
+                            <option value="Gavilán Mixto">Gavilán Mixto</option>
+                            <option value="Sirirí Vientre Negro">Sirirí Vientre Negro</option>
+                            <option value="Jote Real">Jote Real</option>
+                            <option value="Pingüino Penacho Amarillo">Pingüino Penacho Amarillo</option>
+                            <option value="Cóndor Andino">Cóndor Andino</option>
                         </select>
 
+
                         <!-- Textarea -->
-                        <label for="exampleInputEmail1" class="form-label mt-3">Quieres dejar un comentario?</label>
+                        <label for="exampleInputTextarea" class="form-label mt-3">Quieres dejar un comentario?</label>
                         <div class="form-floating">
-                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                            <label for="floatingTextarea">Si lo deseas, podés dejar tu comentario...</label>
+                            <textarea class="form-control areaTexto h-100 d-inline-block" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                            <label for="floatingTextarea" class="b-1">Si lo deseás, dejá tu comentario...</label>
                         </div>
 
                         <!-- Pregunta y botones -->
-                        <label for="exampleInputEmail1" class="form-label mt-3">Te ha gustado este sitio?</label>
+                        <label for="exampleInputCheck" class="form-label mt-3">Te ha gustado este sitio?</label>
                         <div class="form-check mt-3">
                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                             <label class="form-check-label" for="flexRadioDefault1">
@@ -168,28 +167,31 @@
                 <div class="
                     col-lg-4
                     col-md-11 
-                    col-sm-12 
-                    col-xs-12">
-                    <img src="../img/Contact me - 01.jpg" alt="Cabures" title="Cabures" class="wow animate__animated animate__backInRight imagenContact">
+                    col-sm-11
+                    col-11
+                    h-100 d-inline-block">
+                    <img src="../img/Contact me - 01.jpg" alt="Yetapá Acollarado" title="Yetapá Acollarado" class="wow animate__animated animate__backInRight imagenContact">
                 </div>
             </div>
         </div>
         <div class="divContact 
         px-1 overflow-hidde">
-            <div class="row">
+            <div class="row
+                justify-content-center">
                 <div class="
-                    col-lg-6
-                    col-md-11
-                    col-sm-12 
-                    col-xs-12">
-                    <img src="../img/Contact me - 02.jpg" alt="Cabures" title="Cabures" class="wow animate__animated animate__backInLeft imagenContact">
+                    col-lg-5
+                    col-md-11 
+                    col-sm-11
+                    col-11
+                    mb-4">
+                    <img src="../img/Contact me - 02.jpg" alt="Gorriones" title="Gorriones" class="wow animate__animated animate__backInLeft imagenContact">
                 </div>
                 <div class="
-                    col-lg-6
+                    col-lg-6 
                     col-md-11 
-                    col-sm-12 
-                    col-xs-12">
-                    <img src="../img/Contact me - 03.jpg" alt="Cabures" title="Cabures" class="wow animate__animated animate__backInRight imagenContact">
+                    col-sm-11
+                    col-11">
+                    <img src="../img/Contact me - 03.jpg" alt="Zampullín Tobiano" title="Zampullín Tobiano" class="wow animate__animated animate__backInRight imagenContact">
                 </div>
             </div>
         </div>
@@ -198,40 +200,24 @@
     <!-- Footer -->
     <footer class="footer">
         <ul class="enlacesRedesSociales">
-            <li class="enlacesRedesSociales__items wow animate__animated animate__backInUp">
-                <a href="https://www.facebook.com.ar" target="_blank"><img src="../ico/facebook.png" alt="" class="enlacesRedesSociales__items--imagen"></a>
+            <li class="enlacesRedesSociales__items">
+                <a href="https://www.facebook.com.ar" target="_blank">
+                    <img src="../ico/facebook.png" alt="" class="enlacesRedesSociales__items--imagen"></a>
             </li>
-            <li class="enlacesRedesSociales__items wow animate__animated animate__backInUp">
-                <a href="https://www.instagram.com" target="_blank"><img src="../ico/instagram.png" alt="" class="enlacesRedesSociales__items--imagen"></a>
-            </li>
-            <li class="enlacesRedesSociales__items wow animate__animated animate__backInUp">
+            <li class="enlacesRedesSociales__items">
                 <a href="https://www.twitter.com" target="_blank">
                     <img src="../ico/twitter.png" alt="" class="enlacesRedesSociales__items--imagen" id="twitter">
                 </a>
             </li>
+            <li class="enlacesRedesSociales__items">
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="../ico/instagram.png" alt="" class="enlacesRedesSociales__items--imagen"></a>
+            </li>
         </ul>
-        <p class="hechoPor">
-            <span><i></i>H</span>
-            <span><i></i>e</span>
-            <span><i></i>c</span>
-            <span><i></i>h</span>
-            <span><i></i>o</span>
-            <span><i></i>&nbsp</span>
-            <span><i></i>p</span>
-            <span><i></i>o</span>
-            <span><i></i>r</span>
-            <span><i></i>&nbsp</span>
-            <span><i></i>G</span>
-            <span><i></i>a</span>
-            <span><i></i>b</span>
-            <span><i></i>r</span>
-            <span><i></i>i</span>
-            <span><i></i>e</span>
-            <span><i></i>l</span>
-            <span><i></i>.</span>
-            <span><i></i>.</span>
-            <span><i></i>.</span>
-        </p>
+        <!-- wow animate__animated animate__slideInUp -->
+        <div class="hechoPor">
+            <p class="stroke halftone halftone-color">Gabo...</p>
+        </div>
     </footer>
 
     <!-- Agregamos JS para utilizar Wow -->

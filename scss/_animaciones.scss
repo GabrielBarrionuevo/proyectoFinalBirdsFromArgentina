@@ -2,12 +2,12 @@
 /* Animaciones */
 /* ================================= */
 /* Agregar en un futuro animaciones para imagenes de redes sociales. */
-.grid-item:hover .imagenAreaPrincipal {
+.grid-item:hover .areaPrincipal__imagen {
     -webkit-transform:scale(1.05);
     transform:scale(1.05);
     transition-duration: .7s;
 }
-.imagenAreaPrincipal {
+.areaPrincipal__imagen {
     overflow:hidden;
 }
 
@@ -122,14 +122,18 @@
 .navbar-light .navbar-brand:hover {
     color: $glaucous;
 }
-.hechoPor span{
-    cursor: pointer;
-    filter: blur(3px);
-    transition: 0.2s;
-        &:hover {
-            filter: blur(0px);
-            transition: 0s;
-            border: 1px solid $cultured;
-            box-shadow: 0 0 55px $granny-smith-apple;
-        }
+
+/* FOOTER */
+.hechoPor {
+    vertical-align: middle;
+    color: #f9f9f9;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.hechoPor:hover {
+    display: inline-block;
+    animation: bounce;
+    animation-duration: 2s;
 }

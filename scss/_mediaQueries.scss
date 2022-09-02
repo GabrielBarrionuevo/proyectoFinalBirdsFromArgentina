@@ -1,49 +1,54 @@
+    /* BODY */
+    .tituloPrincipal:before {
+    content: "Birds from Argentina";
+}
+    /* MENU */
+    .tituloInicio:before {
+        content: "Inicio";
+    }
+    .tituloCaracteristicas:before {
+        content: "Caracacteristicas";
+    }
+    .tituloCategorias:before {
+        content: "Categorias";
+    }
+    .tituloAbout:before {
+        content: "About Us";
+    }
+    .tituloContact:before {
+        content: "Contact Us";
+    }    
+
 /* ========================= */
 /* MEDIA QUERIES */
 /* ========================= */
-@media screen and (max-width: 650px){
-    /* MENU */
-    .divAbout {
-        /* No logro encontrar solución al inconveniente de que vuelva a ser row la imagen y el texto de about cuando la resolución es menor a 600px. */
-        display: flex;
-        flex-direction: row;
-    }
 
-//Terminar de liquidar bien detalles del menu responsive.
-    .navbar-light 
-    .navbar-brand {
-        color: $cultured;
-        font-size: 2rem;
-        font-weight: bold;
-        text-align: center;
-        margin: auto;
+
+/* ================================================================ */
+/* ================================================================ */
+@media screen and (max-width: 1200px){
+    .tituloInicio:before {
+        content: "Inicio";
     }
-    .navbar-toggler {
-        margin: auto;
-    } 
-    .container-fluid {
-        // background-color: red;
-        margin-top: 4%;
+    .tituloCaracteristicas:before {
+        content: "Carac ";
     }
-    /* FOOTER */
-    .footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-end;
-        height: fit-content;
+    .tituloCategorias:before {
+        content: "Categ ";
     }
-    .hechoPor {
-        margin: 20px;
+    .tituloAbout:before {
+        content: "About";
     }
-    .enlacesRedesSociales {
-        display: flex;
-        flex-direction: column;
-    }
-    .enlacesRedesSociales__items--imagen {
-        width: 60px;
+    .tituloContact:before {
+        content: "Contact";
     }
 }
+/* ================================================================ */
+/* ================================================================ */
+
+
+/* ================================================================ */
+/* ================================================================ */
 @media screen and (max-width: 952px){
     .areaEncabezado {
         display: flex;
@@ -64,3 +69,80 @@
         width: 70px;
     }
 }
+/* ================================================================ */
+/* ================================================================ */
+
+
+/* ================================================================ */
+/* ================================================================ */
+@media screen and (max-width: 680px){
+    /* MENU */
+    .divAbout {
+        display: flex;
+        flex-direction: row;
+    }
+    .navbar-light 
+    .navbar-brand {
+        color: $cultured;
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        margin: auto;
+    }
+    .navbar-toggler {
+        margin: auto;
+    } 
+    .container-fluid {
+        margin-top: 4%;
+    }
+
+    /* MAIN */
+    .textoCentrado {
+        font-size: 6vw;
+    }
+
+    /* FOOTER */
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        height: fit-content;
+    }
+    .hechoPor {
+        margin: 20px;
+    }
+    .enlacesRedesSociales {
+        display: flex;
+        flex-direction: column;
+    }
+    .enlacesRedesSociales__items--imagen {
+        width: 60px;
+    }
+}
+/* ================================================================ */
+/* ================================================================ */
+
+
+/* ================================================================ */
+/* ================================================================ */
+@media screen and (max-width: 423px){
+    .navbar-toggler-icon {
+    width: 30px;
+    height: 30px;
+    }
+}
+/* ================================================================ */
+/* ================================================================ */
+
+
+/* ================================================================ */
+/* ================================================================ */
+@media screen and (max-width: 340px){
+    .tituloPrincipal:before {
+    content: "BfArg";
+    }
+}
+/* ================================================================ */
+/* ================================================================ */
+

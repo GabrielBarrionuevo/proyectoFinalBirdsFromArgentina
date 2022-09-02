@@ -8,7 +8,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 550px;
-    gap: 30px;
+    gap: 50px;
 }
 .grid-item  {
 }
@@ -25,7 +25,7 @@
 .elementoChica2 {
     grid-column: 1/2;
 }
-.imagenAreaPrincipal {
+.areaPrincipal__imagen {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -57,6 +57,7 @@
     @extend .enlacesRedesSociales;
     flex-direction: row;
     gap: 30px;
+    padding-left: 10px;
 }
 .grid-item {
     display: flex;
@@ -102,6 +103,8 @@ main {
 }
 .areaEncabezado__texto {
     width: 70%;
+    // color: $dark-slate-blue;
+    background-color: rgba($color: $cultured, $alpha: .2);
 }
 
 
@@ -115,30 +118,30 @@ main {
 }
 /* SECTION PRINCIPAL */
 .areaPrincipal__titulo, 
-.areaPrincipal__videos--titulo {
+.areaPrincipal__videos--titulo,
+.textoCentrado {
     box-shadow: 0 0 45px $dark-slate-blue;
     width: 150px;
-    font-size: 40px;
+    font-size: 3em;
     margin-top: 40px;
     margin-left: 20px;
     margin-bottom: 20px;
     padding: 5px;
+    padding-bottom: 0px;
     text-align: center;
 }
-.areaPrincipal__titulo {
-    width:100%;
+.areaPrincipal__titulo,
+.textoCentrado {
+    width:fit-content;
     margin: 20px;
     margin-top: 100px;
     padding: 10px auto;
-    text-align: left;
-    display: inline;
+    display: inline-block;
 }
-
-.imagenAreaPrincipal {
+.areaPrincipal__imagen {
     object-fit: fit;
 }
-
-#imagenCentradaManualmente {
-    object-position: 90%;
+.textoCentrado {
+    color: $dark-slate-blue;
+    font-size: 4vw;
 }
-

@@ -9,7 +9,10 @@ html {
     background-color: hsla(333, 64%, 66%, 0.1);
     font-family: 'Lobster', cursive;
     font-family: 'Roboto Slab', serif;
-    /* Resetear valores antes de empezar */
+    /* Eliminamos scroll horizontal generado por bootstraps en aboutUs y ContactUs */
+    overflow-x: hidden;
+    /* Agregamos un espacio desde el top para uqe al ingresar al sitio, el menu fijo no nos tape el contenido. */
+    scroll-padding-top: 50px;
 }
 #iconoMenu {
     display: none;

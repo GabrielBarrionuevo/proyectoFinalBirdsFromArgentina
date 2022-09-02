@@ -17,7 +17,10 @@ html {
   background-color: hsla(333deg, 64%, 66%, 0.1);
   font-family: "Lobster", cursive;
   font-family: "Roboto Slab", serif;
-  /* Resetear valores antes de empezar */
+  /* Eliminamos scroll horizontal generado por bootstraps en aboutUs y ContactUs */
+  overflow-x: hidden;
+  /* Agregamos un espacio desde el top para uqe al ingresar al sitio, el menu fijo no nos tape el contenido. */
+  scroll-padding-top: 50px;
 }
 
 #iconoMenu {
@@ -133,6 +136,8 @@ header {
 }
 
 .navbar-toggler-icon {
+  width: 50px;
+  height: 50px;
   filter: invert(100%);
   border: 4px solid #3d3b8e;
 }
@@ -147,7 +152,7 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 550px;
-  gap: 30px;
+  gap: 50px;
 }
 
 .elementoGrande1 {
@@ -166,7 +171,7 @@ header {
   grid-column: 1/2;
 }
 
-.imagenAreaPrincipal {
+.areaPrincipal__imagen {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -201,6 +206,7 @@ header {
 .areaEncabezado {
   flex-direction: row;
   gap: 30px;
+  padding-left: 10px;
 }
 
 .grid-item {
@@ -248,6 +254,7 @@ main {
 
 .areaEncabezado__texto {
   width: 70%;
+  background-color: rgba(249, 249, 249, 0.2);
 }
 
 /* ******************** */
@@ -261,32 +268,35 @@ main {
 
 /* SECTION PRINCIPAL */
 .areaPrincipal__titulo,
-.areaPrincipal__videos--titulo {
+.areaPrincipal__videos--titulo,
+.textoCentrado {
   box-shadow: 0 0 45px #3d3b8e;
   width: 150px;
-  font-size: 40px;
+  font-size: 3em;
   margin-top: 40px;
   margin-left: 20px;
   margin-bottom: 20px;
   padding: 5px;
+  padding-bottom: 0px;
   text-align: center;
 }
 
-.areaPrincipal__titulo {
-  width: 100%;
+.areaPrincipal__titulo,
+.textoCentrado {
+  width: fit-content;
   margin: 20px;
   margin-top: 100px;
   padding: 10px auto;
-  text-align: left;
-  display: inline;
+  display: inline-block;
 }
 
-.imagenAreaPrincipal {
+.areaPrincipal__imagen {
   object-fit: fit;
 }
 
-#imagenCentradaManualmente {
-  object-position: 90%;
+.textoCentrado {
+  color: #3d3b8e;
+  font-size: 4vw;
 }
 
 /* ================================ */
@@ -326,13 +336,13 @@ footer {
 /* Animaciones */
 /* ================================= */
 /* Agregar en un futuro animaciones para imagenes de redes sociales. */
-.grid-item:hover .imagenAreaPrincipal {
+.grid-item:hover .areaPrincipal__imagen {
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
   transition-duration: 0.7s;
 }
 
-.imagenAreaPrincipal {
+.areaPrincipal__imagen {
   overflow: hidden;
 }
 
@@ -487,60 +497,73 @@ footer {
   color: #6883ba;
 }
 
-.hechoPor span {
-  cursor: pointer;
-  filter: blur(3px);
-  transition: 0.2s;
+/* FOOTER */
+.hechoPor {
+  vertical-align: middle;
+  color: #f9f9f9;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.5rem;
 }
-.hechoPor span:hover {
-  filter: blur(0px);
-  transition: 0s;
-  border: 1px solid #f9f9f9;
-  box-shadow: 0 0 55px #b0e298;
+
+.hechoPor:hover {
+  display: inline-block;
+  animation: bounce;
+  animation-duration: 2s;
+}
+
+/* BODY */
+.tituloPrincipal:before {
+  content: "Birds from Argentina";
+}
+
+/* MENU */
+.tituloInicio:before {
+  content: "Inicio";
+}
+
+.tituloCaracteristicas:before {
+  content: "Caracacteristicas";
+}
+
+.tituloCategorias:before {
+  content: "Categorias";
+}
+
+.tituloAbout:before {
+  content: "About Us";
+}
+
+.tituloContact:before {
+  content: "Contact Us";
 }
 
 /* ========================= */
 /* MEDIA QUERIES */
 /* ========================= */
-@media screen and (max-width: 650px) {
-  /* MENU */
-  .divAbout {
-    /* No logro encontrar solución al inconveniente de que vuelva a ser row la imagen y el texto de about cuando la resolución es menor a 600px. */
-    display: flex;
-    flex-direction: row;
+/* ================================================================ */
+/* ================================================================ */
+@media screen and (max-width: 1200px) {
+  .tituloInicio:before {
+    content: "Inicio";
   }
-  .navbar-light .navbar-brand {
-    color: #f9f9f9;
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
-    margin: auto;
+  .tituloCaracteristicas:before {
+    content: "Carac ";
   }
-  .navbar-toggler {
-    margin: auto;
+  .tituloCategorias:before {
+    content: "Categ ";
   }
-  .container-fluid {
-    margin-top: 4%;
+  .tituloAbout:before {
+    content: "About";
   }
-  /* FOOTER */
-  .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    height: fit-content;
-  }
-  .hechoPor {
-    margin: 20px;
-  }
-  .enlacesRedesSociales, .areaEncabezado {
-    display: flex;
-    flex-direction: column;
-  }
-  .enlacesRedesSociales__items--imagen {
-    width: 60px;
+  .tituloContact:before {
+    content: "Contact";
   }
 }
+/* ================================================================ */
+/* ================================================================ */
+/* ================================================================ */
+/* ================================================================ */
 @media screen and (max-width: 952px) {
   .areaEncabezado {
     display: flex;
@@ -561,6 +584,73 @@ footer {
     width: 70px;
   }
 }
+/* ================================================================ */
+/* ================================================================ */
+/* ================================================================ */
+/* ================================================================ */
+@media screen and (max-width: 680px) {
+  /* MENU */
+  .divAbout {
+    display: flex;
+    flex-direction: row;
+  }
+  .navbar-light .navbar-brand {
+    color: #f9f9f9;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+  }
+  .navbar-toggler {
+    margin: auto;
+  }
+  .container-fluid {
+    margin-top: 4%;
+  }
+  /* MAIN */
+  .textoCentrado {
+    font-size: 6vw;
+  }
+  /* FOOTER */
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: fit-content;
+  }
+  .hechoPor {
+    margin: 20px;
+  }
+  .enlacesRedesSociales, .areaEncabezado {
+    display: flex;
+    flex-direction: column;
+  }
+  .enlacesRedesSociales__items--imagen {
+    width: 60px;
+  }
+}
+/* ================================================================ */
+/* ================================================================ */
+/* ================================================================ */
+/* ================================================================ */
+@media screen and (max-width: 423px) {
+  .navbar-toggler-icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+/* ================================================================ */
+/* ================================================================ */
+/* ================================================================ */
+/* ================================================================ */
+@media screen and (max-width: 340px) {
+  .tituloPrincipal:before {
+    content: "BfArg";
+  }
+}
+/* ================================================================ */
+/* ================================================================ */
 /* ***************** */
 /* Paleta de colores */
 /* ***************** */
@@ -585,7 +675,7 @@ body {
 
 .divAbout,
 .divContact {
-  margin: 20px;
+  margin: 20px auto;
 }
 
 .areaPrincipal__videos {
@@ -593,11 +683,10 @@ body {
 }
 
 form {
-  padding: 40px;
+  padding: 20px;
 }
 
-.areaPrincial__imagenChica,
-.areaPrincipal__imagenGrande,
+.areaPrincipal__imagen,
 .imagenEstatica,
 .imagenAbout,
 .imagenContact {
@@ -606,6 +695,116 @@ form {
 
 .imagenEstatica {
   object-fit: unset;
+}
+
+.activo {
+  background-color: #e072a4;
+  border-radius: 5px;
+  box-shadow: 0 0 25px #e072a4;
+}
+
+.footer {
+  z-index: 0;
+}
+
+.stroke {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #111827;
+  color: transparent;
+}
+
+.halftone {
+  position: relative;
+}
+.halftone:after {
+  content: "Gabo...";
+  font-size: 1em;
+  letter-spacing: 6px;
+  left: calc(50% + 6px);
+  position: absolute;
+  top: calc(50% + 6px);
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  -webkit-text-stroke-width: 0;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.halftone-color:after {
+  z-index: -1;
+  background-color: #e072a4;
+}
+
+.hechoPor p {
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: 5px;
+  margin: 0;
+}
+
+/* Texto sobre imagen */
+/* Agrego texto sobre las imagenes solamente en el index. De lo contrario me da la impresion de uqe todo el sitio esta sobrecargandoce. */
+.imagenContenedor {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.textoCentrado {
+  mix-blend-mode: hard-light;
+  background-color: rgba(249, 249, 249, 0.2);
+  position: absolute;
+  top: 20%;
+  left: 45%;
+  transform: translate(-45%, -45%);
+  z-index: 3;
+}
+
+/* Posicionamiento */
+.areaEncabezado {
+  background-image: url("../img/Index-encabezado.jpg");
+  background-position: 50% 35%;
+}
+
+/* Consideré utilizar id's y no clases porque el centrado de cada una de ellas depende de la imagen particular y del criterio estétito que uno tiene a la hora de intentar centrar o priorizar una zona de la imagen en concreto. Pienso que no es algo general de todas ellas y no algo automatizado el decir, por ejemplo: "corro a la derecha un 20% todas estas imágenes del index", sino que se ajustó una por una. */
+/* Index 1 y 3 */
+/* Categorias Yunga 1*/
+/* Estepa Patagónica 2 */
+#imagenCentradaManualmente01,
+#imagenCentradaManualmente02,
+#imagenCentradaManualmente05,
+#imagenCentradaManualmente10,
+#imagenCentradaManualmente13 {
+  object-position: 90% 20%;
+}
+
+/* Caracteristicas Miradas2 */
+/* Categorias Bosque Busantartico 2 */
+/* About us 2 */
+#imagenCentradaManualmente03,
+#imagenCentradaManualmente09,
+#imagenCentradaManualmente11 {
+  object-position: 90% 10%;
+}
+
+/* Caracteristicas Picos2 */
+/* Categorias Matorrales del Monte 2*/
+/* Categorias Llanura Bonaerense 1*/
+#imagenCentradaManualmente04,
+#imagenCentradaManualmente06,
+#imagenCentradaManualmente07 {
+  object-position: 20%;
+}
+
+/* Categorias Ribera Platense 2*/
+#imagenCentradaManualmente08 {
+  object-position: 40%;
+}
+
+/* Categorias Chaco 2 */
+#imagenCentradaManualmente12 {
+  object-position: 30%;
 }
 
 /*# sourceMappingURL=styles.css.map */
